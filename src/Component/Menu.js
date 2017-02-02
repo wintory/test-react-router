@@ -5,17 +5,17 @@ export default class Menu extends Component {
 
   render() {
     var a = [
-      'Bangkok',
-      'Phuket',
-      'Chiangmai',
-      'Pattaya'
+      'Bangkok ',
+      'Phuket ',
+      'Chiangmai ',
+      'Pattaya '
     ]
 
 
     while (true) {
       return(
 
-        <h1><Link to="/">{a}</Link></h1>
+        <h1><Link to="/provdetail">{a}</Link></h1>
       )
     }
   }

@@ -5,16 +5,19 @@ import Menu from './Component/Menu'
 
 
 export default class App extends Component {
+
+
   render() {
+    console.log(this.props.children);
+
     return (
       <div>
         <Nav />
       <div className="App">
         <div className="App-header">
           <Menu />
-          {this.props.children}
         </div>
-    
+        {this.props.children}
       </div>
     </div>
     );
