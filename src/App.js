@@ -3,9 +3,8 @@ import './css/App.css';
 import Nav from './Component/Nav'
 import Menu from './Component/Menu'
 
-class App extends Component {
 
-
+export default class App extends Component {
   render() {
     return (
       <div>
@@ -13,15 +12,11 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <Menu />
+          {this.props.children}
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      {this.props.children}
+    
       </div>
     </div>
     );
   }
 }
-
-export default App;
