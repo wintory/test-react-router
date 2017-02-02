@@ -6,7 +6,13 @@ import './css/index.css';
 import ProvDetail from './page/ProvDetail'
 import Login from './page/login'
 
+
 ReactDOM.render(
-  <App/>
+  <Router history={browserHistory}>
+    <Route path="/" Component={App}>
+      <Route path="provdetail" Component={ProvDetail}/>
+        <Route path="login" Component={Login}/>
+    </Route>
+  </Router>
   ,document.getElementById('root')
 );

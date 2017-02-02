@@ -8,9 +8,9 @@ class Nav extends Component{
     return(
     <nav>
       <div className="navbar">
-        <img alt={logo}></img>
+        <img alt="aaa" src={logo}></img>
+        <div className="login"> <Link to="/login">Login</Link></div>
       </div>
-      <div className="login"> <Link to="/login">Login</Link></div>
     </nav>
     )
   }
